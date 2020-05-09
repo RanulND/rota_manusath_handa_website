@@ -1,2 +1,2 @@
 # sample website
-website link is manusath.netlify.app
+[a link](https://manusath.netlify.app)
