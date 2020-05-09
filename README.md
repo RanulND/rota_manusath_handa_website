@@ -1,2 +1,2 @@
 # sample website
-# website link is manusath.netlify.app
+website link is manusath.netlify.app
