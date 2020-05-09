@@ -112,7 +112,7 @@ function mySprite(width, height, img, x, y, type){
         var winTop = 30;//bad to hardcode. need some way to get it automatically.
         if (this.y-170 < winTop) {
             //this.y = winTop;
-            alert("CONGRATULATIONS!!! YOU HAVE COMPLETED THE LISSANA GAHA AVRUDU CHALLENGE!!! YOUR SCORE IS, ");//exit the program.
+            alert("You are good");//exit the program.
             isGameOver=true;           
             myGameArea.stop();
         }
