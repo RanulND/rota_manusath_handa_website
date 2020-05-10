@@ -93,7 +93,7 @@ echo "<br />Login Ok.<br />";
 //
 $file_list = ftp_nlist($conn, "/voice_of_humanity_2019_OL_past_papers/Agri/Agri_2016");
 sort($file_list,1);
-printr($file);				
+print_r($file);				
 foreach ($file_list as $file)
 {
     if(strcmp($file,".")!=0 and strcmp($file,"..")!=0)
