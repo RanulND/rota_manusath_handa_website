@@ -31,11 +31,11 @@
 <?php
                      
 $ftp_host = "ftp.rotaractmora.org";
-$ftp_user = "manusath";
+$ftp_user = "manusath"; 
 $ftp_password = "MH2020@rt";
 
 // set up a connection or die
-$conn_id = ftp_connect($ftp_host,21) or die("Couldn't connect to $ftp_host"); 
+$conn_id = ftp_connect($ftp_host) or die("Couldn't connect to $ftp_host"); 
 
 // try to login
 if (@ftp_login($conn_id, $ftp_user, $ftp_password)) {
