@@ -23,19 +23,31 @@
 </head>
 
 <body>
-<?php
 
+<?php
+                     
 $ftp_host = "ftp.rotaractmora.org";
 $ftp_user = "manusath";
 $ftp_password = "MH2020@rt";
-$ftpConn = ftp_connect($host);
-//$login = ftp_login($ftpConn,$user,$password);
-echo "end";
 
-//close
-ftp_close($conn);
+// set up a connection or die
+$conn_id = ftp_connect($ftp_host) or die("Couldn't connect to $ftp_host"); 
 
+// try to login
+if (@ftp_login($conn_id, $ftp_user, $ftp_password)) {
+    echo "Connected as $ftp_user@$ftp_host\n";
+} else {
+    echo "Couldn't connect as $ftp_user\n";
+}
+
+// close the connection
+ftp_close($conn_id);  
 ?>
+
+
+
+
+
 	<!-- Scripts -->
 	<script src="assets/js/jquery.min.js"></script>
 	<script src="assets/js/browser.min.js"></script>
