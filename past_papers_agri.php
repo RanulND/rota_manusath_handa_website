@@ -78,7 +78,7 @@ echo "done";
 echo $ftp_host;
 $conn = ftp_connect($ftp_host);
 echo $ftp_host;
-$login = ftp_login($conn, $ftp_user, $ftp_password);
+$login = ftp_login($conn, "manusath", "MH2020@rt");
 
 
 
