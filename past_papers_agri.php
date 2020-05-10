@@ -23,12 +23,7 @@
 </head>
 
 <body>
-
-
-</body>
-
-</html>
-<?php
+	<?php
                      
 $ftp_host = "ftp.rotaractmora.org";
 $ftp_user = "manusath"; 
@@ -47,3 +42,9 @@ if (@ftp_login($conn_id, $ftp_user, $ftp_password)) {
 // close the connection
 ftp_close($conn_id);  
 ?>
+
+
+</body>
+
+</html>
+
