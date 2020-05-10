@@ -86,12 +86,14 @@ if ((!$conn) || (!$login) || (!$mode)) {
    die("FTP connection has failed !");
 }
 echo "<br />Login Ok.<br />";
+				
 
 //
 //Now run ftp_nlist()
 //
 $file_list = ftp_nlist($conn, "/voice_of_humanity_2019_OL_past_papers/Agri/Agri_2016");
 sort($file_list,1);
+printr($file);				
 foreach ($file_list as $file)
 {
     if(strcmp($file,".")!=0 and strcmp($file,"..")!=0)
