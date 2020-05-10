@@ -1,4 +1,4 @@
-<!DOCTYPE HTML>
+
 <!--
 	Industrious by TEMPLATED
 	templated.co @templatedco
@@ -66,7 +66,7 @@
 						</audio>
 
 		</div>
-        <?php
+<?php
 $ftp_host = "ftp.rotaractmora.org";
 $ftp_user = "manusath";
 $ftp_password = "MH2020@rt";
@@ -77,7 +77,8 @@ echo "done";
 $conn = ftp_connect($ftp_host);
 echo $ftp_host;
 $login = ftp_login($conn, $ftp_user, $ftp_password);
-echo "done";
+
+
 
 //
 //Enable PASV ( Note: must be done after ftp_login() )
