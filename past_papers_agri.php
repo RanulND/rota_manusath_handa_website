@@ -29,6 +29,7 @@ $ftp_user = "manusath";
 $ftp_password = "MH2020@rt";
 $ftpConn = ftp_connect($host);
 //$login = ftp_login($ftpConn,$user,$password);
+echo "end";
 
 //close
 ftp_close($conn);
