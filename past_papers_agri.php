@@ -57,14 +57,14 @@
 					<h4 class="panel-title">
 						<a data-toggle="collapse" data-parent="#accordion" href="#collapse2016">2016</a>
 					</h4>
-				</div>				
+				</div>
 				<div id="collapse2016" class="panel-collapse collapse">
 					<div class="panel-body">Questions 01 - 10</br>
 						<audio controls>
 							<source src="http://rotaractmora.org/rotaractmora_static/MH/voice_of_humanity_2019_OL_past_papers/Agri/Agri_2016/1.2016_agri_mcq_1-10.mp3" type="audio/mp3">
 							Your browser does not support the audio element.
-						</audio>						
-						
+						</audio>
+
 		</div>
         <?php
 $ftp_host = "ftp.rotaractmora.org";
@@ -86,31 +86,31 @@ if ((!$conn) || (!$login) || (!$mode)) {
    die("FTP connection has failed !");
 }
 echo "<br />Login Ok.<br />";
-				
+
 
 //
 //Now run ftp_nlist()
 //
 $file_list = ftp_nlist($conn, "/voice_of_humanity_2019_OL_past_papers/Agri/Agri_2016");
 sort($file_list,1);
-printr("TEST");				
+printr("TEST");
 foreach ($file_list as $file)
 {
     if(strcmp($file,".")!=0 and strcmp($file,"..")!=0)
     {
-       //echo "<br>"; 
+       //echo "<br>";
        echo '<div class="panel-body">';
        echo "$file</br>";
 						echo"<audio controls>";
 							echo"<source src='http://rotaractmora.org/rotaractmora_static/MH/voice_of_humanity_2019_OL_past_papers/Agri/Agri_2016/{$file}'";
-				
+
 							echo ' type="audio/mp3">';
 							echo'Your browser does not support the audio element.';
-						echo'</audio>';						
-					
+						echo'</audio>';
+
 		echo'</div>';
     }
-  
+
 }
 
 //close
@@ -253,7 +253,7 @@ ftp_close($conn);
 						<a data-toggle="collapse" data-parent="#accordion" href="#collapse2018">2018</a>
 					</h4>
 				</div>
-				
+
 				<div id="collapse2018" class="panel-collapse collapse">
 					<div class="panel-body">1.2018 agri mcq 1-5.mp3</br>
 						<audio controls>
