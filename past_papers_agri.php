@@ -75,6 +75,7 @@ $ftp_password = "MH2020@rt";
 echo "<br />Connecting to $ftp_host via FTP...";
 echo "done";
 echo "done";
+echo $ftp_host;
 $conn = ftp_connect($ftp_host);
 echo $ftp_host;
 $login = ftp_login($conn, $ftp_user, $ftp_password);
