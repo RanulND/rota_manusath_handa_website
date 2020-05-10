@@ -72,11 +72,14 @@ $ftp_user = "manusath";
 $ftp_password = "MH2020@rt";
 
 //Connect
-echo "<br />Connecting to $ftp_host via FTP...";
-echo "done";
-$conn = ftp_connect($ftp_host);
-echo $ftp_host;
-$login = ftp_login($conn, $ftp_user, $ftp_password);
+// set up a connection or die
+$conn_id = ftp_connect($ftp_host) or die("Couldn't connect to $ftp_host"); 
+// try to login
+if (@ftp_login($conn_id, $ftp_user, $ftp_password)) {
+    echo "Connected as $ftp_user@$ftp_host\n";
+} else {
+    echo "Couldn't connect as $ftp_user\n";
+}
 
 
 
