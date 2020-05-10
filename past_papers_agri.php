@@ -25,9 +25,9 @@
 <body>
 	<?php
                      
-$ftp_host = "ftp.speedtest.tele2.net";
-$ftp_user = "anonymous"; 
-$ftp_password = "anonymous";
+$ftp_host = "ftp.test.rebex.net";
+$ftp_user = "demo"; 
+$ftp_password = "password";
 
 echo"hello world";
 
