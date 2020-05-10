@@ -73,8 +73,10 @@ $ftp_password = "MH2020@rt";
 
 //Connect
 echo "<br />Connecting to $ftp_host via FTP...";
+echo "done";
 $conn = ftp_connect($ftp_host);
 $login = ftp_login($conn, $ftp_user, $ftp_password);
+echo "done";
 
 //
 //Enable PASV ( Note: must be done after ftp_login() )
@@ -93,7 +95,7 @@ echo "<br />Login Ok.<br />";
 //
 $file_list = ftp_nlist($conn, "/voice_of_humanity_2019_OL_past_papers/Agri/Agri_2016");
 sort($file_list,1);
-echo "TEST";
+printr("TEST");
 foreach ($file_list as $file)
 {
     if(strcmp($file,".")!=0 and strcmp($file,"..")!=0)
