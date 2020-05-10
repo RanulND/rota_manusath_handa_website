@@ -73,9 +73,10 @@ $ftp_password = "MH2020@rt";
 
 //Connect
 echo "<br />Connecting to $ftp_host via FTP...";
+echo "done";
 $conn = ftp_connect($ftp_host);
 $login = ftp_login($conn, $ftp_user, $ftp_password);
-echo "TEST";
+echo "done";
 
 //
 //Enable PASV ( Note: must be done after ftp_login() )
