@@ -29,6 +29,8 @@ $ftp_host = "ftp.speedtest.tele2.net";
 $ftp_user = "anonymous"; 
 $ftp_password = "anonymous";
 
+echo"hello world";
+
 // set up a connection or die
 $conn_id = ftp_connect($ftp_host,21,180) or die("Couldn't connect to $ftp_host"); 
 
