@@ -29,7 +29,7 @@ $ftp_host = "ftp.test.rebex.net";
 $ftp_user = "demo"; 
 $ftp_password = "password";
 
-echo"hello world";
+echo"hello worlds";
 
 // set up a connection or die
 $conn_id = ftp_connect($ftp_host,21,180) or die("Couldn't connect to $ftp_host"); 
