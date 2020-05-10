@@ -24,6 +24,10 @@
 
 <body>
 
+
+</body>
+
+</html>
 <?php
                      
 $ftp_host = "ftp.rotaractmora.org";
@@ -43,17 +47,3 @@ if (@ftp_login($conn_id, $ftp_user, $ftp_password)) {
 // close the connection
 ftp_close($conn_id);  
 ?>
-
-
-
-
-
-	<!-- Scripts -->
-	<script src="assets/js/jquery.min.js"></script>
-	<script src="assets/js/browser.min.js"></script>
-	<script src="assets/js/breakpoints.min.js"></script>
-	<script src="assets/js/util.js"></script>
-	<script src="assets/js/main.js"></script>
-</body>
-
-</html>
