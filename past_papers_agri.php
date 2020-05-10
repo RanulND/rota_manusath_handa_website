@@ -81,7 +81,7 @@ echo "done";
 //
 //Enable PASV ( Note: must be done after ftp_login() )
 //
-//$mode = ftp_pasv($conn, TRUE);
+$mode = ftp_pasv($conn, TRUE);
 
 //Login OK ?
 if ((!$conn) || (!$login) || (!$mode)) {
@@ -95,7 +95,7 @@ echo "<br />Login Ok.<br />";
 //
 $file_list = ftp_nlist($conn, "/voice_of_humanity_2019_OL_past_papers/Agri/Agri_2016");
 sort($file_list,1);
-
+printr("TEST");
 foreach ($file_list as $file)
 {
     if(strcmp($file,".")!=0 and strcmp($file,"..")!=0)
