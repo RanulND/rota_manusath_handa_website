@@ -67,17 +67,22 @@
 
 		</div>
 <?php
+
+
 $ftp_host = "ftp.rotaractmora.org";
 $ftp_user = "manusath";
 $ftp_password = "MH2020@rt";
-
-//Connect
-echo "<br />Connecting to $ftp_host via FTP...";
-echo "done";
-$conn = ftp_connect($ftp_host) or die("Couldn't connect to ".$ftp_host."\n");
-echo $ftp_host;
-$login = ftp_login($conn, $ftp_user, $ftp_password);
-
+$ftpConn = ftp_connect($host);
+$login = ftp_login($ftpConn,$user,$password);
+// check connection
+if ((!$ftpConn) || (!$login)) {
+ echo 'FTP connection has failed! Attempted to connect to '. $host. ' for user '.$user.'.';
+}else{
+ echo 'FTP connection was a success.';
+ $directory = ftp_nlist($ftpConn,'');
+ echo ''.print_r($directory,true).'';
+}
+ftp_close($ftpConn);
 
 
 //
