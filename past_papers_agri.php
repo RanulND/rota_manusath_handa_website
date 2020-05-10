@@ -7,16 +7,6 @@
 <html>
 
 <head>
-	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
-	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
-	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
-
-	<title>Past Papers</title>
-	<meta charset="utf-8" />
-	<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
-	<meta name="description" content="" />
-	<meta name="keywords" content="" />
-	<link rel="stylesheet" href="assets/css/main.css" />
 
 
 
@@ -29,7 +19,7 @@ $ftp_host = "ftp.test.rebex.net";
 $ftp_user = "demo"; 
 $ftp_password = "password";
 
-echo"hello worlds";
+echo"hellssso worlds";
 
 // set up a connection or die
 $conn_id = ftp_connect($ftp_host,21,180) or die("Couldn't connect to $ftp_host"); 
