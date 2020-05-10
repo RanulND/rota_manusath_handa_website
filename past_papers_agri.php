@@ -73,54 +73,7 @@ $ftp_host = "ftp.rotaractmora.org";
 $ftp_user = "manusath";
 $ftp_password = "MH2020@rt";
 $ftpConn = ftp_connect($host);
-$login = ftp_login($ftpConn,$user,$password);
-// check connection
-if ((!$ftpConn) || (!$login)) {
- echo 'FTP connection has failed! Attempted to connect to '. $host. ' for user '.$user.'.';
-}else{
- echo 'FTP connection was a success.';
- $directory = ftp_nlist($ftpConn,'');
- echo ''.print_r($directory,true).'';
-}
-ftp_close($ftpConn);
-
-
-//
-//Enable PASV ( Note: must be done after ftp_login() )
-//
-$mode = ftp_pasv($conn, TRUE);
-
-//Login OK ?
-if ((!$conn) || (!$login) || (!$mode)) {
-   die("FTP connection has failed !");
-}
-echo "<br />Login Ok.<br />";
-
-
-//
-//Now run ftp_nlist()
-//
-$file_list = ftp_nlist($conn, "/voice_of_humanity_2019_OL_past_papers/Agri/Agri_2016");
-sort($file_list,1);
-printr("TEST");
-foreach ($file_list as $file)
-{
-    if(strcmp($file,".")!=0 and strcmp($file,"..")!=0)
-    {
-       //echo "<br>";
-       echo '<div class="panel-body">';
-       echo "$file</br>";
-						echo"<audio controls>";
-							echo"<source src='http://rotaractmora.org/rotaractmora_static/MH/voice_of_humanity_2019_OL_past_papers/Agri/Agri_2016/{$file}'";
-
-							echo ' type="audio/mp3">';
-							echo'Your browser does not support the audio element.';
-						echo'</audio>';
-
-		echo'</div>';
-    }
-
-}
+//$login = ftp_login($ftpConn,$user,$password);
 
 //close
 ftp_close($conn);
