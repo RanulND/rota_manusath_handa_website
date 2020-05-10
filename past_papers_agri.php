@@ -79,7 +79,7 @@ $login = ftp_login($conn, $ftp_user, $ftp_password);
 //
 //Enable PASV ( Note: must be done after ftp_login() )
 //
-$mode = ftp_pasv($conn, TRUE);
+//$mode = ftp_pasv($conn, TRUE);
 
 //Login OK ?
 if ((!$conn) || (!$login) || (!$mode)) {
