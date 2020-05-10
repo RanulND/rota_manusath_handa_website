@@ -67,7 +67,7 @@
 
 		</div>
 <?php
-$ftp_host = "ftp.rotaractmora.org";
+$ftp_host = "rotaractmora.org";
 $ftp_user = "manusath";
 $ftp_password = "MH2020@rt";
 
