@@ -29,6 +29,8 @@ $ftp_host = "ftp.rotaractmora.org";
 $ftp_user = "manusath"; 
 $ftp_password = "MH2020@rt";
 
+echo"hello world";
+
 // set up a connection or die
 $conn_id = ftp_connect($ftp_host,21,180) or die("Couldn't connect to $ftp_host"); 
 
