@@ -2422,7 +2422,7 @@ body {
   background: #111111;
   color: rgba(255, 255, 255, 0.5);
   cursor: default;
-  height: 4.0rem;
+  height: 5.0rem;
   left: 0;
   line-height: 3.25rem;
   position: fixed;
@@ -2436,7 +2436,8 @@ body {
     height: inherit;
     line-height: inherit;
     padding: 0 1.25rem;
-    text-decoration: none; }
+    text-decoration: none;
+}
   #header > nav > a {
     color: inherit;
     display: inline-block;
