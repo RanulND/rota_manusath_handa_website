@@ -1923,7 +1923,7 @@ ul.icons {
   #banner input[type="checkbox"]:focus + label:before,
   #banner input[type="radio"]:focus + label:before {
     border-color: #ce1b28;
-    box-shadow: 0 0 0 1px #ce1b28; }
+    box-shadow: 0 0 0 1px #ffffff; }
   #banner ::-webkit-input-placeholder {
     color: rgba(255, 255, 255, 0.4) !important; }
   #banner :-moz-placeholder {
@@ -1953,7 +1953,7 @@ ul.icons {
     background: #111111;
     box-shadow: 0px 0px 4px 1px rgba(255, 255, 255, 0.025); }
     #banner .testimonials .content .credit strong {
-      color: #ce1b28; }
+      color: #ffffff; }
   #banner > .inner {
     -moz-transform: scale(1.0);
     -webkit-transform: scale(1.0);
@@ -2011,7 +2011,7 @@ ul.icons {
     width: 100%;
     z-index: 1; }
   #banner:after {
-    background: linear-gradient(135deg, #b40959 0%, #490a28 74%);
+    background: linear-gradient(180deg, #ffffff 0%, #818181 85%);
     content: ' ';
     display: block;
     height: 100%;
@@ -2422,7 +2422,7 @@ body {
   background: #111111;
   color: rgba(255, 255, 255, 0.5);
   cursor: default;
-  height: 3.25rem;
+  height: 4.0rem;
   left: 0;
   line-height: 3.25rem;
   position: fixed;
