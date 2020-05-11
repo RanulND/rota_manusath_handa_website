@@ -2011,7 +2011,7 @@ ul.icons {
     width: 100%;
     z-index: 1; }
   #banner:after {
-    background: linear-gradient(135deg, #ff009de0 0%, #8b0f57 85%);
+    background: linear-gradient(135deg, #f5049d 0%, #f5049d 85%);
     content: ' ';
     display: block;
     height: 100%;
@@ -2062,7 +2062,7 @@ ul.icons {
   background-color: #ffffff;
   color: rgba(255, 255, 255, 0.75);
   background-attachment: fixed;
-  background-image: linear-gradient(#c20b57, rgba(255, 255, 255, 0.25)), url(../../images/cta01.jpg);
+  background-image: linear-gradient(#f5049d, rgba(255, 255, 255, 0.25)), url(../../images/cta01.jpg);
   background-position: bottom;
   background-repeat: no-repeat;
   background-size: cover;
