@@ -6,6 +6,7 @@
 	Released for free under the Creative Commons Attribution 3.0 license (templated.co/license)
 */
 /* Basic */
+
 @-ms-viewport {
   width: device-width; }
 body {
@@ -2452,7 +2453,8 @@ body {
         font-family: FontAwesome;
         font-style: normal;
         font-weight: normal;
-        text-transform: none !important; }
+        text-transform: none !important;
+        }
       #header > nav > a[href="#menu"]:before {
         content: '\f0c9';
         margin: 0 0.5rem 0 0; }
