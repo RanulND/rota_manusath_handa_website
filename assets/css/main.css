@@ -1799,7 +1799,7 @@ ul.icons {
   -ms-flex-align: center;
   -ms-flex-pack: center;
   background-color: #111111;
-  color: rgba(255, 255, 255, 0.5);
+  color: rgba(124, 31, 78, 0.5);
   -moz-align-items: center;
   -webkit-align-items: center;
   -ms-align-items: center;
@@ -1974,7 +1974,7 @@ ul.icons {
   #banner p {
     font-size: 1.5rem; }
   #banner a {
-    color: rgba(255, 255, 255, 0.5);
+    color: rgba(131, 20, 88, 0.5);
     text-decoration: none; }
     #banner a:hover {
       color: #ffffff; }
@@ -2011,7 +2011,7 @@ ul.icons {
     width: 100%;
     z-index: 1; }
   #banner:after {
-    background: linear-gradient(180deg, #ffffff 0%, #818181 85%);
+    background: linear-gradient(135deg, #ff009de0 0%, #8b0f57 85%);
     content: ' ';
     display: block;
     height: 100%;
@@ -2062,7 +2062,7 @@ ul.icons {
   background-color: #ffffff;
   color: rgba(255, 255, 255, 0.75);
   background-attachment: fixed;
-  background-image: linear-gradient(#ffffff, rgba(255, 255, 255, 0.25)), url(../../images/cta01.jpg);
+  background-image: linear-gradient(#c20b57, rgba(255, 255, 255, 0.25)), url(../../images/cta01.jpg);
   background-position: bottom;
   background-repeat: no-repeat;
   background-size: cover;
